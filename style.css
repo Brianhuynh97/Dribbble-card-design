@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+  background: #f4f4f4;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.card-container {
+  margin: 16px;
+}
+
+.card {
+  background: white;
+  width: 250px;
+  padding: 8px;
+  border: 1px solid rgb(240, 240, 240);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover .btn-white {
+  opacity: 1;
+}
+
+.card-img {
+  background-image: url("https://source.unsplash.com/random");
+  height: 150px;
+  background-size: cover;
+  background-position: center;
+}
+
+.list-inline {
+  list-style-type: none;
+  padding-left: 0;
+  text-align: right;
+  padding-top: 8px;
+  margin: 0;
+}
+
+.list-inline li {
+  display: inline-block;
+  color: #b0b0b0;
+}
+
+.list-inline li,
+.list-inline li i {
+  margin: 0 2px;
+}
+
+.card-user {
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+  color: #4B94BD;
+}
+
+.card-user img {
+  width: 30px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.btn-white {
+  background: #fff;
+  padding: 8px;
+  margin: 8px;
+  display: inline-block;
+  border-radius: 2px;
+  color: grey;
+  opacity: 0;
+  transition: 0.2s;
+}
+
+.btn-white:hover {
+  color: black;
+}
